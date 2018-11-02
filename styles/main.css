@@ -1,38 +1,52 @@
 .main-body{
     background-color: #FFFFFF;
-    
+    height:100%;
     
 }
 
-.search-img{
-    display:flex;
-    flex-direction: column;
-    
-    
-}
 
 .content{
     display:flex;
-    align-self:center;
+    align-items: center;
     flex-direction: column;
     margin-top:10%;
 }
-.search-inp{
-    margin-top: 20px;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-}
+
+ 
+
 .search-form{
     display:flex;
     flex-direction: column;
 }
 
 .search-buttons{
-    margin: 15px;
+    margin-top: 20px;
     
+}
+.search-buttons > input{
+    height: 35px;
+    margin:10px;
+    border-style: none;
+    background-color: #F2F2F2;
+    color: #757575;
+    cursor: default;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.search-buttons > input:hover{
+    font-weight: bolder;
+    font-size: 14px;
+    color:black;
+    border-style:solid;
+    border-color:#757575;
+    box-shadow: 10px 3px 4px 7px rgba(246, 246, 246,50%);
 }
 .first-links{
     list-style-type: none;
-    display:flex
+    display:flex;
     
     
 }
@@ -49,8 +63,78 @@ li a {
     font-size:200px;
 
 }
-.blue{color:#4285F4;}
-#red{}
-#yellow{}
-#green{}
-#red{}
+
+.form-div{
+    display: flex;
+    width: 600px;
+    height:45px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px 2px  rgba(0,0,0,0.5);
+
+
+}
+
+.microphone::after{
+    content:url("../images/microphone.png");
+    
+}
+.microphone{
+    height:5px;
+
+}
+.search-inp{
+    display:block;
+    width:100%;
+    height:100%;
+        border:none;
+    border-style: none;
+}
+.search-div{
+    width:100%;
+    border:none;
+    border-style: none;
+}
+.footer-div{
+    background-color: rgb(242, 242, 242);
+    left:0;
+    bottom:0;
+    position:fixed;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    color:#5f6368;
+}
+.country-div{
+    display:block;
+}
+.lower-div{
+    display:flex;
+    border-top: 0.5px solid rgb(243, 243, 243);
+    
+    postion:fixed;
+
+}
+.left-footer{
+    display:flex;
+    width:100%;
+    left:0;
+}
+
+.right-footer{
+    display:flex;
+    right:0;
+    postion:fixed;
+
+}
+div>a{
+    font-family: arial,sans-serif;
+    margin:10px;
+    color:#5f6368;
+}
+
+.country-div{
+    font-size:20px;
+    margin-left: 10px;
+   font-family: arial,sans-serif;
+
+}
