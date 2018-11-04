@@ -4,7 +4,7 @@
     <title>Fake-Google</title>
     <link rel="stylesheet" href="./styles/main.css"/>
     <script src="scripts/main.js"></script>
-    
+    <meta charset="UTF-8">
 </head>
 <body class="main-body">
   <header class="nav-bar">
@@ -28,14 +28,14 @@
     </div>
     <div class="form-div">
       <div class="search-div">
-	<input class="search-inp" type="search"/>
+	<input class="search-inp" id="search-data" type="search" onchange="inp()"/>
       </div>
       <div>
 	<span class="microphone"></span>
       </div>
     </div>
     <div class="search-buttons">
-	<input type="submit" value="Google Search"/>
+	<input type="submit" value="Google Search" id="search-button" onchange="inp()"/>
 	<input type="submit" value="Feeling Lucky"/>
     </div>
     <div class="google-offered">
